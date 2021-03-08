@@ -1,0 +1,88 @@
+\documentclass[a4paper,11pt]{article}
+\pdfoutput=1 % if your are submitting a pdflatex (i.e. if you have
+             % images in pdf, png or jpg format)
+\usepackage{color}
+\usepackage{jcappub} % for details on the use of the package, please
+                     %
+
+\usepackage[T1]{fontenc} % if needed
+\usepackage{threeparttable}
+\usepackage[labelformat=empty]{subfig}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{placeins}
+\usepackage[utf8]{inputenc}
+\usepackage{indentfirst}
+\usepackage[utf8]{inputenc}
+
+\title{\boldmath Flux Conventions in the Neutrino Sources Group}
+
+\author[a]{Alex Pizzuto,}
+\author[a]{Justin Vandenbroucke}
+
+
+\affiliation[a]{Dept. of Physics and Wisconsin IceCube Particle Astrophysics Center, University of Wisconsin, Madison, WI 53706, USA }
+
+\emailAdd{apizzuto@icecube.wisc.edu}
+
+\abstract{}
+
+\notoc %this turns off the table of contents
+\begin{document} 
+\maketitle
+\flushbottom
+
+\section{Introduction\label{sec:intro}}
+One of the predominant scientific goals of IceCube is the detection of astrophysical neutrino sources. To this end, BLA BLA MAXIMUM LIKELIHOOD REFERENCE. Fortunately, we seem to be in the era when individual sources of astrophysical neutrinos are becoming detectable above our atmospheric backgrounds. However, this UNDERSCORES the importance of clear and consistent notation. As the hypotheses which we test in the neutrino sources WG can vary greatly, 
+
+\section{Flux vs. Fluence}
+Suppose we have a source of astrophysical neutrinos that produces a flux at Earth at the level of
+
+\begin{equation}
+    \frac{dN}{dEdAdt} = \phi_0 \Big(\frac{E}{E_0}\Big)^{-\gamma}\;,
+\end{equation}
+where $\phi_0$ is a normalization that carries units GeV$^{-1}$~cm$^{-2}$~s$^{-1}$.
+
+\begin{tabular}{l|c|c}
+     &  \\
+     & 
+\end{tabular}
+
+\section{Unbroken power laws}
+Mention why E-2 are convenient (you don't need a reference energy). but this leads to confusion because without mention of a reference energy you might think that it's an integrated quantity
+
+\section{Central energies}
+Outline the different methods, talk about why sensitivity construction collapses to effective area construction, maybe make a plot of this as a function of time window showing the central percentage? Mention Christian Haack's new method?
+
+\section{Differential Sensitivity}
+Look at Rene's internal note for a lot of this, and cite it
+
+\section{Bin width problem}
+Differential sensitivity is a function of the bin-width?
+
+\subsection{Comparing to Models and Model Rejection Factors}
+Because our differential sensitivity is a function of bin-width, show fluxes we are / aren't sensitive to
+
+\section{Constraining physics quantities: Energies, luminosities, etc.}
+Maybe mention the need to correct for redshift? Look at Nora's thesis
+
+\section{Time-dependent fluxes}
+
+Fluence:
+
+\begin{align}
+    \iint E \frac{dN}{dEdAdT} dE dT &= \Delta T \int_{\{E\}} E \phi_0 \Big(\frac{E}{E_0}\Big)^{-\gamma} dE \\
+    &= \phi_0 \Delta T E_0^{\gamma} \int_{\{E\}} E^{-\gamma + 1} dE \\ 
+    &= 
+\end{align}
+with units $[ \mathcal{F}] = $GeV$\cdot$cm$^{-2}$.
+
+\begin{align}
+    E^2 \int \frac{dN}{dEdAdT} dT &= E^2 \Delta T \phi_0 \Big(\frac{E}{E_0}\Big)^{-2} \\
+    &= \phi_0 E_0^2 \Delta T 
+\end{align}
+
+\bibliographystyle{JHEP}
+\bibliography{references}
+
+\end{document}
